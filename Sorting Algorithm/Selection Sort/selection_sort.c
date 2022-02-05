@@ -10,14 +10,14 @@ void selectionSort(int A[], int n)
 
         for (j = i + 1; j < n; j++)
         {
-            if (A[j] < A[index_min])
+            if (A[j] > A[index_min]) //dicending > / ascending <  
             {
                 index_min = j;
             }
         }
         if (index_min != i)
         {
-            // A[i] ও A[index_min] অদল বদল করতে হবে
+            
             temp = A[i];
             A[i] = A[index_min];
             A[index_min] = temp;
