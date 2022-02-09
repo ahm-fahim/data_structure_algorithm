@@ -21,7 +21,7 @@ void push(Stack *s, int item)
     }
 }
 
-void pop(Stack *s)
+int pop(Stack *s)
 {
     int item;
 
